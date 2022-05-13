@@ -1,3 +1,8 @@
+/* DEFINING VARIABLES */
+
+@bg: rgb(208, 168, 92);
+@border: 1px solid whitesmoke;
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -16,18 +21,18 @@
 }
 
 .accept-button {
-  border: 1px solid whitesmoke;
+  border: @border;
   min-width: 195px;
   overflow: hidden;
 
-  .accept-button:hover & {
+  &:hover {
     -webkit-clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
     clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
   }
 }
 
 #accept {
-  background-color: rgb(208, 168, 92);
+  background-color: @bg;
 
   position: relative;
   display: inline-block;
