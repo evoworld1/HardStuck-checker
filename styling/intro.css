@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(rgb(3, 6, 8), rgb(8, 15, 20));
+  color: white;
+}
+
+.text-container {
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  flex-direction: column;
+}
+
+.accept-button {
+  -webkit-clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
+  clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
+  border: 1px solid whitesmoke;
+  min-width: 195px;
+  overflow: hidden;
+}
+
+#accept {
+  background-color: rgb(208, 168, 92);
+
+  position: relative;
+  display: inline-block;
+  min-width: 195px;
+  height: 56px;
+  padding: 0px;
+  margin: 5px;
+  color: rgb(1, 1, 1);
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 4;
+}
