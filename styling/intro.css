@@ -16,11 +16,14 @@
 }
 
 .accept-button {
-  -webkit-clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
-  clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
   border: 1px solid whitesmoke;
   min-width: 195px;
   overflow: hidden;
+
+  .accept-button:hover & {
+    -webkit-clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
+    clip-path: polygon(0 0, 0% 50%, 190% 700%, 100% 45%, 85% 0);
+  }
 }
 
 #accept {
