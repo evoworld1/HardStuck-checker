@@ -1,4 +1,7 @@
 /* DEFINING VARIABLES */
+body {
+  font-family: "Bebas Neue", cursive !important;
+}
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -11,62 +14,104 @@
   z-index: -1;
 }
 .text-container {
-  font-family: "Bebas Neue", cursive;
   display: flex;
   flex-direction: column;
 }
 .accept-button {
+  transition: all 0.3s;
+  transform: scale(1);
   width: 230px;
   height: 66px;
-  overflow: hidden;
-  z-index: 2;
   position: relative;
-  border-left: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.accept-button::after,
 .accept-button::before {
   content: "";
   position: absolute;
-  width: 203px;
-  left: 20px;
+  width: 195px;
+  height: 56px;
   z-index: 2;
-}
-.accept-button::before {
-  height: 20px;
-  width: 184px;
-  top: 0;
-  border: 1px solid white;
-  border-width: 1px 1px 0px 0px;
-  transform: skew(45deg);
+  border: 2px solid white;
+  transition: all 0.4s;
   transform-origin: right bottom;
 }
 .accept-button::after {
-  height: 44px;
-  bottom: 0;
-  left: 0;
-  border: 1px solid white;
-  border-width: 0px 1px 1px 0px;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid whitesmoke;
+  transform: rotate(45deg);
+  z-index: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.accept-button:hover {
+  transition: all 250ms;
+  transform: scale(1.1);
+}
+.accept-button:hover::after {
+  transition: all 0.4s;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
 }
 .accept-button:hover::before {
-  transition: all 1s;
-  transform: skew(0deg);
+  transition: all 250ms;
+  height: 80px;
+  width: 220px;
+  opacity: 0;
+  z-index: 1;
+  border: 2px solid white;
 }
 #accept {
   background-color: #d0a85c;
+  transition: all 0.3s;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 195px;
   height: 56px;
-  padding: 0px;
+  padding-top: 3px;
   margin: 5px;
-  color: #010101;
-  font-size: 0.8125rem;
+  color: #030608;
+  font-size: 1.3rem;
   letter-spacing: 0.1em;
   font-weight: bold;
-  border: none;
+  text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
   z-index: 1;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 70% 100%, 0 100%, 0% 70%, 0 0);
+}
+#accept:hover {
+  transition: all 0.2s;
+  border: whitesmoke;
+  clip-path: polygon(30% 0%, 90% 0, 100% 25%, 100% 100%, 71% 100%, 10% 100%, 0 70%, 0 0);
+  z-index: 3;
+}
+@media only screen and (max-width: 1100px) {
+  .accept-button::after {
+    content: "";
+    position: absolute;
+    transition: all 0.4s;
+    width: 70px;
+    height: 70px;
+    opacity: 1;
+  }
+  .accept-button::before {
+    transition: all 250ms;
+    height: 80px;
+    width: 220px;
+    opacity: 0;
+  }
+  .accept-button:hover {
+    transform: none;
+  }
+  #accept {
+    clip-path: polygon(30% 0%, 90% 0, 100% 25%, 100% 100%, 71% 100%, 10% 100%, 0 70%, 0 0);
+  }
 }
