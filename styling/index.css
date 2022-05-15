@@ -112,7 +112,7 @@ body {
     z-index: 3;
   }
 }
-.wrapper .wrapper {
+.wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
