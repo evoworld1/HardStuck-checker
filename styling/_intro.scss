@@ -2,18 +2,6 @@ body {
   font-family: "Bebas Neue", cursive !important;
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: $bg-color;
-  color: white;
-  z-index: -1;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
