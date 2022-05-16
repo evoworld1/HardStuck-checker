@@ -5,12 +5,7 @@
 @import "./animation";
 
 .wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-column-100vh-100vw;
   background: $bg-color;
   color: white;
   z-index: -1;

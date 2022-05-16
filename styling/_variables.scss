@@ -6,3 +6,27 @@ $bg-color: radial-gradient($darkblue, $brightblue);
 $border: 2px solid white;
 $slim-border: 1px solid whitesmoke;
 $gold-border: 2px solid $gold;
+
+@mixin flex-column-100vh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@mixin flex-column-100vh-100vw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+@mixin flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

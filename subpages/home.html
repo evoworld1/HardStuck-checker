@@ -24,7 +24,45 @@
             placeholder="Type your summoners' name..."
           />
         </div>
-        <object class="search-btn" data="../assets/border.svg"></object>
+        <div class="search-btn-wrapper">
+          <!-- <object class="btn-border" data="../assets/border.svg"></object> -->
+          <a href="./results.html" class="search-btn"
+            >Evaluate me...
+            <svg
+              class="btn-border"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="6.683 6.683 150.062 36.452"
+              width="230px"
+              height="65px"
+            >
+              <path
+                id="border"
+                style="
+                  fill: transparent;
+                  fill-opacity: 0;
+                  fill-rule: nonzero;
+                  stroke: rgb(255, 255, 255);
+                "
+                d="M 24.165 6.683 L 6.683 24.909 L 6.683 43.134 L 141.194 43.135 L 156.744 26.124 C 156.746 19.926 156.744 11.063 156.744 6.683 L 24.165 6.683 Z"
+              >
+                <animate
+                  begin="border.mouseover"
+                  fill="freeze"
+                  attributeName="d"
+                  dur="130ms"
+                  to="M 6.547 6.683 L 6.683 6.683 L 6.683 43.134 L 156.382 43.135 L 156.744 43.135 C 156.746 36.937 156.744 11.063 156.744 6.683 L 6.547 6.683 Z"
+                />
+                <animate
+                  begin="border.mouseleave"
+                  fill="freeze"
+                  attributeName="d"
+                  dur="130ms"
+                  to="M 24.165 6.683 L 6.683 24.909 L 6.683 43.134 L 141.194 43.135 L 156.744 26.124 C 156.746 19.926 156.744 11.063 156.744 6.683 L 24.165 6.683 Z"
+                />
+              </path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </body>
