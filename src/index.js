@@ -1,5 +1,7 @@
-import searchApi from "./modules/searchapi";
+import api from "./modules/api";
 
-const initiateAll = () => {};
-searchApi();
+const initiateAll = () => {
+  api();
+};
+
 initiateAll();

@@ -4,6 +4,7 @@
   "description": "\"project for learning purposes, evaluating players gameplay based on RiotAPI data\"",
   "private": true,
   "scripts": {
+    "start": "webpack ./dist/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
