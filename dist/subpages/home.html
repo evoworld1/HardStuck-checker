@@ -14,9 +14,10 @@
       rel="stylesheet"
     />
   </head>
-  <script defer src="../../dist/main.js"></script>
+  <script defer src="../../dist/main.js" type="module"></script>
   <body>
     <div class="wrapper">
+      <div id="search-results"></div>
       <div class="search-module-container">
         <div class="search-box-container">
           <input
@@ -27,7 +28,6 @@
           />
         </div>
         <div class="search-btn-wrapper">
-          <!-- <object class="btn-border" data="../assets/border.svg"></object> -->
           <button class="search-btn">
             Evaluate me...
             <svg

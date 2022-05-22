@@ -1,7 +1,9 @@
-import api from "./modules/api";
+import eventHandlers from "./modules/eventHandlers";
+import fetchApiData from "./modules/fetchApiData";
+import appendDataToDOM from "./modules/appendApiData";
 
 const initiateAll = () => {
-  api();
+  eventHandlers();
 };
 
 initiateAll();
