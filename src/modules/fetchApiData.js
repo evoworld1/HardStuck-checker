@@ -2,7 +2,7 @@ import appendDataToDOM from "./appendApiData";
 import { summonersName } from "./eventHandlers";
 
 const fetchApiData = async () => {
-  const api_key = "api_key=RGAPI-adc97b60-8b0e-4820-8a7c-d673f88be6f6";
+  const api_key = "api_key=RGAPI-fd8728e1-82fc-42f5-9607-3030d1d4d063";
 
   let getPlayerDataBySummonersName;
   let playerEncryptedSummonerId;

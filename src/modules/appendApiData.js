@@ -1,5 +1,5 @@
 const appendDataToDOM = (data) => {
-  const resultsContainer = document.getElementById("search-results");
+  const fetchResultsContainer = document.querySelector("search-results");
 
   let playerInformation = document.createElement("p");
   playerInformation.innerHTML = `${data[0].rank},
@@ -7,7 +7,7 @@ const appendDataToDOM = (data) => {
     ${data[0].losses},
     ${data[0].summonerName}`;
 
-  resultsContainer.appendChild(playerInformation);
+  fetchResultsContainer.appendChild(playerInformation);
 };
 
 export default appendDataToDOM;
