@@ -1,3 +1,9 @@
+.home-wrapper {
+  @include flex-column-90vh-95vw;
+  @include wrapper-basic;
+
+}
+
 .search-module-container {
   @include flex-column-100vh;
   position: relative;
@@ -26,7 +32,6 @@
     transform: rotate(45deg);
     position: absolute;
     z-index: -1;
-
     border: 10px solid $darkblue;
   }
 }
@@ -75,4 +80,24 @@
     transition: all 0.2s ease;
     background-color: $gold2;
   }
+}
+
+.search-results {
+  opacity: 0;
+}
+
+.revealed {
+  transition: opacity 1s ease;
+  transition-delay: 0.8s;
+  opacity: 1;
+  position: absolute;
+  @include flex-column-90vh-95vw;
+  color: white;
+  overflow: hidden;
+}
+
+.hidden {
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: -10;
 }

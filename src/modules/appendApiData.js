@@ -1,5 +1,5 @@
 const appendDataToDOM = (data) => {
-  const fetchResultsContainer = document.querySelector("search-results");
+  const fetchResultsContainer = document.querySelector(".search-results");
 
   let playerInformation = document.createElement("p");
   playerInformation.innerHTML = `${data[0].rank},
