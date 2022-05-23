@@ -1,8 +1,9 @@
 $gold: rgb(208, 168, 92);
 $gold2: rgb(223, 183, 109);
 $darkblue: rgb(3, 6, 8);
-$brightblue: rgb(8, 15, 20);
-$bg-color: radial-gradient($darkblue, $brightblue);
+$brightblue: rgb(11, 22, 31);
+$primary-bg-color: radial-gradient($darkblue 30%, $brightblue);
+$secondary-bg-color: radial-gradient(rgb(0, 0, 0), $brightblue);
 $border: 2px solid white;
 $slim-border: 1px solid whitesmoke;
 $gold-border: 2px solid $gold;
@@ -29,4 +30,13 @@ $gold-border: 2px solid $gold;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@mixin flex-column-min100vh-100vw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
 }

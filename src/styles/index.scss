@@ -3,10 +3,31 @@
 @import "./_intro";
 @import "./_results";
 @import "./animation";
+@import "./mediaQueries";
 
 .wrapper {
   @include flex-column-100vh-100vw;
-  background: $bg-color;
+  background: $secondary-bg-color;
   color: white;
-  z-index: -1;
+  overflow: hidden;
+  &::after {
+    content: "";
+    background: $primary-bg-color;
+    position: absolute;
+    z-index: 0;
+    border: 1px solid $gold;
+    width: 95%;
+    height: 90%;
+    box-shadow: 0 0 15px rgb(98, 42, 150);
+  }
 }
+
+.second-bg-image {
+  position: fixed;
+  width: 400px;
+  height: auto;
+  bottom: -40px;
+  right: -105px;
+  z-index: 1;
+}
+

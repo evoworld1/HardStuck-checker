@@ -1,0 +1,104 @@
+//TABLETS
+@media only screen and (min-width: 1101px) {
+  .accept-button {
+    &:hover {
+      transition: all 250ms;
+      transform: scale(1.1);
+
+      &::after {
+        transition: all 0.4s;
+        width: 70px;
+        height: 70px;
+        opacity: 1;
+      }
+      &::before {
+        transition: all 250ms;
+        height: 80px;
+        width: 220px;
+        opacity: 0;
+        z-index: 1;
+        border: $border;
+      }
+    }
+    #accept {
+      &:hover {
+        transition: all 0.2s;
+
+        clip-path: polygon(
+          30% 0%,
+          90% 0,
+          100% 25%,
+          100% 100%,
+          71% 100%,
+          10% 100%,
+          0 70%,
+          0 0
+        );
+        z-index: 3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  * {
+    transition: none;
+  }
+  .accept-button {
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 70px;
+      height: 70px;
+      opacity: 1;
+    }
+    &::before {
+      height: 80px;
+      width: 220px;
+      opacity: 0;
+    }
+  }
+  #accept {
+    clip-path: polygon(
+      30% 0%,
+      90% 0,
+      100% 25%,
+      100% 100%,
+      71% 100%,
+      10% 100%,
+      0 70%,
+      0 0
+    );
+    z-index: 3;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .search-box {
+    min-width: 330px;
+  }
+
+  .bg-image {
+    width: 300px;
+  }
+}
+
+//SMARTPHONES
+@media only screen and (max-width: 395px) {
+  .search-box {
+    min-width: 330px;
+  }
+  .bg-image {
+    display: none;
+  }
+  .wrapper::after {
+    content: none;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .search-box {
+    min-width: 250px;
+  }
+}

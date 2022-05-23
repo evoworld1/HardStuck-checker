@@ -9,14 +9,25 @@
   @include flex-column-centered;
   z-index: 1;
   &::before {
-    animation: scaleUp 0.6s ease-out;
+    animation: fadeIn 2s ease-in;
     content: "";
     width: 150px;
     height: 150px;
     transform: rotate(45deg);
     position: absolute;
     z-index: -1;
-    border: $gold-border;
+    border: 3px solid $gold;
+  }
+  &::after {
+    animation: rotate 10s linear infinite;
+    content: "";
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+
+    border: 10px solid $darkblue;
   }
 }
 .search-box {
@@ -27,7 +38,6 @@
 }
 
 .search-btn-wrapper {
-  animation: fadeIn 1s ease-out;
   @include flex-column-centered;
   position: relative;
   margin-top: 100px;
@@ -40,9 +50,11 @@
   position: absolute;
   width: 228px;
   height: 65px;
+  overflow: visible;
 }
 
 .search-btn {
+  animation: fadeIn 0.6s ease-in;
   @include flex-column-centered;
   position: absolute;
   background-color: $gold;
@@ -50,18 +62,17 @@
   height: 45px;
   text-decoration: none;
   font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
   color: rgb(3, 6, 8);
   z-index: 1;
-}
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: "Bebas Neue", cursive;
 
-@media only screen and (max-width: 395px) {
-  .search-box {
-    min-width: 330px;
-  }
-}
-
-@media only screen and (max-width: 290px) {
-  .search-box {
-    min-width: 250px;
+  &:hover {
+    transition: all 0.2s ease;
+    background-color: $gold2;
   }
 }
