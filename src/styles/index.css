@@ -108,14 +108,10 @@
   background-color: rgb(223, 183, 109);
 }
 
-.search-results {
-  opacity: 0;
-}
-
 .revealed {
   transition: opacity 1s ease;
   transition-delay: 0.8s;
-  opacity: 1;
+  opacity: 1 !important;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -636,6 +632,10 @@
     display: none;
   }
 }
+.search-results {
+  opacity: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;

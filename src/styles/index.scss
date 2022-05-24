@@ -3,6 +3,7 @@
 @import "./_intro";
 @import "./animation";
 @import "./mediaQueries";
+@import "./searchResults";
 
 body {
   @include flex-column-100vh-100vw;

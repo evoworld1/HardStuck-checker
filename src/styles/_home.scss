@@ -1,7 +1,6 @@
 .home-wrapper {
   @include flex-column-90vh-95vw;
   @include wrapper-basic;
-
 }
 
 .search-module-container {
@@ -82,14 +81,10 @@
   }
 }
 
-.search-results {
-  opacity: 0;
-}
-
 .revealed {
   transition: opacity 1s ease;
   transition-delay: 0.8s;
-  opacity: 1;
+  opacity: 1 !important;
   position: absolute;
   @include flex-column-90vh-95vw;
   color: white;
