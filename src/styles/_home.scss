@@ -85,10 +85,7 @@
   transition: opacity 1s ease;
   transition-delay: 0.8s;
   opacity: 1 !important;
-  position: absolute;
-  @include flex-column-90vh-95vw;
-  color: white;
-  overflow: hidden;
+  
 }
 
 .hidden {
@@ -96,3 +93,5 @@
   opacity: 0;
   z-index: -10;
 }
+
+

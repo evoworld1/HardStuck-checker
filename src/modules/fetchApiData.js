@@ -21,7 +21,7 @@ const fetchApiData = async () => {
   );
 
   getSummonersDetailedInfo = await getSummonersDetailedInfo.json();
-  console.log(getSummonersDetailedInfo[0].losses);
+
   appendDataToDOM(getSummonersDetailedInfo);
 };
 

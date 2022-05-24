@@ -8,6 +8,10 @@ $border: 2px solid white;
 $slim-border: 1px solid whitesmoke;
 $gold-border: 2px solid $gold;
 
+@mixin flex-column-centered {
+  display: flex;
+  flex-direction: column;
+}
 @mixin flex-column-100vh {
   display: flex;
   flex-direction: column;
@@ -46,6 +50,12 @@ $gold-border: 2px solid $gold;
 @mixin flex-column-centered {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-row-centered {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

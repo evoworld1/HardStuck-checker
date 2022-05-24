@@ -39,6 +39,9 @@
 }
 
 @media only screen and (max-width: 1390px) {
+  .result-container {
+    transform: scale(0.7);
+  }
   .accept-button {
     &::after {
       content: "";
@@ -52,7 +55,6 @@
       height: 80px;
       width: 220px;
       opacity: 1;
-      
     }
   }
   #accept {
