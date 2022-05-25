@@ -21,7 +21,7 @@ Its design was inspired by the League of Legends website theme - darkblue & gold
 
 - Webpack
 
-## TEST SEARCH WITH THERE NICKS (OR YOUR OWN :) ):
+## TEST SEARCH WITH THESE NICKS (OR YOUR OWN :) ):
 
 - gzrg28
 - º Carry Potter º
